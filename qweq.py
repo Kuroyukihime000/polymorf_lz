@@ -15,7 +15,7 @@ class OperationResult:
     def partition(self):
         dataframe1 = self.df[self.df['Результат операции'] == 'недостаточно средств']
         dataframe2 = self.df[self.df['Результат операции'] == 'успешно']   
-        dataframe3 = self.df[self.df['Результат операции'] == 'неправильный ввод пинкода']   
+        dataframe3 = self.df[self.df['Результат операции'] == 'неправильный ввод пин-кода']   
         
         dataframe1.to_csv('setfirst.csv', index = False)
         dataframe2.to_csv('setsecond.csv', index = False)
